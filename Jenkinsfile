@@ -5,6 +5,7 @@ stages{
       steps{
         sh "docker build . -t 966145/webapp:v1"
       }
+    }
     stage('Push Image'){
      steps{
        withCredentials([string(credentialsId: 'dpass', variable: 'password')]) {
