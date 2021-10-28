@@ -15,5 +15,5 @@ spec:
         app: test
     spec:
       containers:
-      - image: nginx
-        name: 966145/webapp:15
+      - name: con1
+        image: 966145/webapp:15
