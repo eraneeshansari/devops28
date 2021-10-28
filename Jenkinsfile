@@ -22,10 +22,10 @@ stages{
            sh "scp -o StrictHostKeyChecking=no new-dep.yaml ec2-user@15.207.249.229:/home/ec2-user/"
           script{
             try{
-               sh "ssh  ec2-user@15.207.249.229  kubectl apply -f dep.yaml" 
+               sh "ssh  ec2-user@15.207.249.229  kubectl apply -f new-dep.yaml" 
             }
             catch(error){
-              sh "ssh  ec2-user@15.207.249.229  kubectl create -f dep.yaml"
+              sh "ssh  ec2-user@15.207.249.229  kubectl create -f new-dep.yaml"
             }
 
           }
