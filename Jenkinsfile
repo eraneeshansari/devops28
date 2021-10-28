@@ -25,7 +25,7 @@ stages{
                sh "ssh  ec2-user@15.207.249.229  kubectl apply -f dep.yaml" 
             }
             catch{
-              sh "ssh  ec2-user@15.207.249.229  kubectl create -f dep.yaml
+              sh "ssh  ec2-user@15.207.249.229  kubectl create -f dep.yaml"
             }
 
           }
